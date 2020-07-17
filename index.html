@@ -181,8 +181,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="1-git-pull-报错-fatal-refusing-to-merge-unrelated-histories"><a href="#1-git-pull-报错-fatal-refusing-to-merge-unrelated-histories" class="headerlink" title="1.git pull 报错 fatal: refusing to merge unrelated histories"></a>1.git pull 报错 fatal: refusing to merge unrelated histories</h2><hr>
-<h3 id="问题产生原因"><a href="#问题产生原因" class="headerlink" title="问题产生原因"></a>问题产生原因</h3><blockquote>
+        <h2 id="1-git-pull-报错-fatal-refusing-to-merge-unrelated-histories"><a href="#1-git-pull-报错-fatal-refusing-to-merge-unrelated-histories" class="headerlink" title="1.git pull 报错 fatal: refusing to merge unrelated histories"></a>1.git pull 报错 fatal: refusing to merge unrelated histories</h2><h3 id="问题产生原因"><a href="#问题产生原因" class="headerlink" title="问题产生原因"></a>问题产生原因</h3><blockquote>
 <p>git merge command拒绝合并不共享同一祖先的历史记录。通常是直接把本地项目上传到远程仓库，从远程克隆下来的项目不会存在这个问题</p>
 </blockquote>
 <h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git pull origin master –allow-unrelated-histories</span><br></pre></td></tr></table></figure>
