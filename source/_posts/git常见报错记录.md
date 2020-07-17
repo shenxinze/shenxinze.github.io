@@ -1,5 +1,9 @@
 ---
 title: git常见报错记录
+categories: 
+- web前端
+tags: 
+- git
 ---
 
 ## 1.git pull 报错 fatal: refusing to merge unrelated histories
