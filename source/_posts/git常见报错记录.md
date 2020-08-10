@@ -1,7 +1,7 @@
 ---
 title: 开发中报错记录
 categories: [web前端]
-tags: [git]
+tags: [git,vue,element]
 ---
 
 ## 1.git pull 报错 fatal: refusing to merge unrelated histories
