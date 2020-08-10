@@ -1,5 +1,5 @@
 ---
-title: git常见报错记录
+title: 开发中报错记录
 categories: [web前端]
 tags: [git]
 ---
@@ -15,3 +15,17 @@ $ git pull origin master –allow-unrelated-histories
 ```
 
 <!--more-->
+
+## 2.vue + elementui 报错 Avoided redundant navigation to current location...
+
+### 问题产生原因
+> 重复点击相同的tab栏菜单，会报错，但是不影响功能
+
+### 解决方法
+```
+// 打开router目录下的index.js文件，复制下面代码，添加到最下方就可以了
+const originalPush = VueRouter.prototype.push
+  VueRouter.prototype.push = function push (location) {
+  return originalPush.call(this, location).catch(err => err)
+}
+```
