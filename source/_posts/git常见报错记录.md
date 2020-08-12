@@ -18,7 +18,7 @@ $ git pull origin master –allow-unrelated-histories
 
 ## 2.vue + elementui 报错 Avoided redundant navigation to current location...
 
-![](./images/20200811_01.png)
+![](git常见报错记录/20200811_01.png)
 
 ### 问题产生原因
 > 重复点击相同的tab栏菜单，会报错，但是不影响功能
