@@ -18,12 +18,13 @@ $ git pull origin master –allow-unrelated-histories
 
 ## 2.vue + elementui 报错 Avoided redundant navigation to current location...
 
+![](./images/20200811_01.png)
 
 ### 问题产生原因
 > 重复点击相同的tab栏菜单，会报错，但是不影响功能
 
 ### 解决方法
-```
+```js
 // 打开router目录下的index.js文件，复制下面代码，添加到最下方就可以了
 const originalPush = VueRouter.prototype.push
   VueRouter.prototype.push = function push (location) {
